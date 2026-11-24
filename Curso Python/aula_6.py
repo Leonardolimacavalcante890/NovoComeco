@@ -46,4 +46,20 @@ if 900 in dic_produtos2.values(): #O .VALUES() pega os VALORES e transforma em u
 else:
     print("Não existe")
 
-#VERIFICAR se uma CHAVE existe
+#EXERCÍCIO
+
+nome_produto = input("Nome do produto: ")
+preco_produto = int(input("Preço do produto: "))
+
+#Cadastrar o novo produto (se o produto não existir)
+#Caso o produto exista ele vai editar o produto
+if nome_produto in dic_produtos2:
+    dic_produtos2[nome_produto] = dic_produtos2[nome_produto], preco_produto
+    print(dic_produtos2)
+else:
+    dic_produtos2[nome_produto] = preco_produto
+#O programa tem que no final atualizar o preço de todos os produtos para os novos valores
+#São 10% original
+for chave in dic_produtos2:
+    chave = dic_produtos2.values() * 0.1
+    print(dic_produtos2)
