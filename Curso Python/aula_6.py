@@ -63,3 +63,15 @@ else:
 for chave in dic_produtos2:
     chave = dic_produtos2.values() * 0.1
     print(dic_produtos2)
+
+#Forma correta: 
+#1° EXERCÍCIO
+
+dic_produtos2[nome_produto] = preco_produto # De acordo com o nome e valor, irá ou ACRESCENTAR ou EDITAR o seu VALOR
+print(dic_produtos2)
+#Exemplo: O nome_produto = airpod e o preço_produto = 2500 -> Resultado: airpod = airpod, 2000 = 2500
+
+#2°EXERCÍCIO
+for produto in dic_produtos2:
+    novo_preco = dic_produtos2[produto] * 1.1
+    print(dic_produtos2)
